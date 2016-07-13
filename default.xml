@@ -13,7 +13,6 @@
 
   <project path="scripts" name="a4b-scripts" remote="a4b" revision="k4.4">
      <copyfile src="scripts/build-beagleboneblack.sh" dest="build-beagleboneblack.sh" />
-i                   scripts/build-beagleboneblack.sh
   </project>
   <project path="device/beagleboard/beagleboneblack" name="a4b-beagleboneblack" remote="a4b" revision="k4.4" />
   <project path="kernel" name="rowboat-kernel" remote="a4b" revision="rowboat-am335x-kernel-3.2-a4b" />
