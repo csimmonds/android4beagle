@@ -7,18 +7,19 @@
   <remote  name="a4b"
            fetch="git://github.com/csimmonds" />
 
-  <default revision="refs/tags/android-4.4.4_r2"
+  <remote  name="rcn"
+           fetch="git://github.com/RobertCNelson" />
+
+  <default revision="refs/tags/android-5.1.1_r37"
            remote="aosp"
            sync-j="4" />
 
-  <project path="scripts" name="a4b-scripts" remote="a4b" revision="k4.4">
+  <project path="scripts" name="a4b-scripts" remote="a4b" revision="l5.1">
      <copyfile src="build-beagleboneblack.sh" dest="build-beagleboneblack.sh" />
   </project>
-  <project path="device/beagleboard/beagleboneblack" name="a4b-beagleboneblack" remote="a4b" revision="k4.4" />
-  <project path="kernel" name="rowboat-kernel" remote="a4b" revision="rowboat-am335x-kernel-3.2-a4b" />
+  <project path="device/beagleboard/beagleboneblack" name="a4b-beagleboneblack" remote="a4b" revision="l5.1" />
+  <project path="bb-kernel" name="bb-kernel" remote="rcn" revision="am33x-v3.8" />
   <project path="u-boot" name="u-boot" remote="a4b" revision="am335x-v2013.01.01-bbb-fb" />
-  <project path="hardware/ti/sgx" name="hardware-ti-sgx" remote="a4b" revision="ti_sgx_sdk-ddk_1.10-a4b" />
-
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
