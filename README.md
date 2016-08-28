@@ -19,6 +19,7 @@ what I do for my day-time job
 |   Board        | AOSP  | Kernel | Cape manager | SGX | Tag              |
 | -------------- | ----- | ------ | ------------ | --- |----------------- |
 |BeagleBone Black| 4.4.4 | 3.2    | N            | Y   | android-4.4.4_r2 |
+|                | 5.1.1 | 3.8    | Y            | N   | android-5.1.1    |
 |                | 6.0.1 | 3.8    | Y            | N   | android-6.0      |
 
 ## Preparation
@@ -26,7 +27,7 @@ what I do for my day-time job
 Make sure that you have a system capable of building AOSP in a reasonable
 amount of time, as described here:
 [http://source.android.com/source/building.html](http://source.android.com/source/building.html).
-Then follow these steps to set it up given here:
+Then set it up following the steps given here:
 [http://source.android.com/source/initializing.html](http://source.android.com/source/initializing.html)
 
 You will need in addition the U-Boot **mkimage tool**. On Ubuntu run
@@ -112,7 +113,7 @@ $ fastboot oem format
 $ fastboot reboot
 ```
 This will force U-Boot to read the new partition table. When the
-fastboot LED comes on again, continue:
+fastboot LED comes on again, continue (still in directory u-boot/):
 ```
 $ fastboot flash spl MLO
 $ fastboot flash bootloader u-boot.img
@@ -124,7 +125,7 @@ $ fastboot flash recovery
 ```
 Power off, **remove the SD card** and power on. It should boot Android...
 
-If something goes wrong which flashing the images, the best diagnostic
-tool is to plug a serial to USB connector into the Beagle and see what
-U-Boot is doing. You can force it into fastboot mode by typing the
-command `fastboot`
+If something goes wrong while flashing the images, the best diagnostic
+tool is to plug a serial to USB connector into the BeagleBone and see what
+U-Boot is doing. You can force it into fastboot mode from the U-Boot prompt
+by typing the command `fastboot`
