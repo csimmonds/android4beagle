@@ -20,7 +20,7 @@ what I do for my day-time job
 | -------------- | ----- | ------ | ------------ | --- |----------------- |
 |BeagleBone Black| 4.4.4 | 3.2    | N            | Y   | android-4.4.4_r2 |
 |                | 5.1.1 | 3.8    | Y            | N   | android-5.1.1    |
-|                | 6.0.1 | 3.8    | Y            | N   | android-6.0      |
+|                | 6.0.1 | 4.1    | Y            | N   | android-6.0      |
 
 ## Preparation
 
