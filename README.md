@@ -1,8 +1,8 @@
 # Android4Beagle
 
 Android4Beagle aims to provide a vanilla AOSP-based Android for
-Beagleboard.org boards, starting with the BeagleBone Black. Hopefully
-I will get round to adding the other colours of BeagelBone later,
+[Beagleboard.org](http://beagleboard.org/) boards, starting with the BeagleBone Black. Hopefully
+I will get round to adding the other colours of BeagleBone later,
 and maybe even the BeagleBoard-xM and BeagleBoard-X15. All of these
 make great platforms for **embedded Android**, by which I mean Android being
 used to control ... I don't know ... a printer, a robot, maybe some
@@ -11,8 +11,7 @@ kind of test or medical equipment.
 If you would like to know how it is done, and how you can apply this
 knowledge to your own products, then you might be interested in
 what I do for my day-time job
-[http://www.2net.co.uk/training.html](www.2net.co.uk/training.html)
-
+[www.2net.co.uk/training.html](http://www.2net.co.uk/training.html)
 
 ## Board support matrix
 
@@ -84,7 +83,7 @@ command would be:
 ```
 $ scripts/write-sdcard-beagleboneblack.sh mmcblk0
 ```
-When done, plug the card into your BeagelBone Black, press the
+When done, plug the card into your BeagleBone Black, press the
 "boot" button and power up.
 
 ## Running Android from internal eMMC flash memory
@@ -101,7 +100,7 @@ command would be
 $ croot
 $ scripts/write-fastboot-sdcard-beagleboneblack.sh mmcblk0
 ```
-When done, plug the card into your BeagelBone Black, press the
+When done, plug the card into your BeagleBone Black, press the
 "boot" button and power up.
 
 The "fastboot LED" (user LED0) should come on, indicating that it
