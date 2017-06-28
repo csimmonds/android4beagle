@@ -2,7 +2,7 @@
 <manifest>
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
-  <default revision="refs/tags/android-6.0.1_r55"
+  <default revision="refs/tags/android-6.0.1_r79"
            remote="aosp"
            sync-j="4" />
   <remote  name="a4b"
@@ -16,9 +16,9 @@
      <copyfile src="build-beagleboneblack.sh" dest="build-beagleboneblack.sh" />
   </project>
   <project path="device/beagleboard/beagleboneblack" name="a4b-beagleboneblack" remote="a4b" revision="m6.0" />
-  <project path="ti-kernel" name="ti-linux-kernel-dev" remote="rcn" revision="ti-linux-4.1.y" />
+  <project path="ti-kernel" name="ti-linux-kernel-dev" remote="rcn" revision="refs/tags/4.1.30-ti-r70" />
   <project path="bb.org-overlays" name="bb.org-overlays" remote="beagleboard" revision="master" />
-  <project path="u-boot" name="u-boot" remote="a4b" revision="am335x-v2013.01.01-bbb-fb" />
+  <project path="u-boot" name="u-boot" remote="a4b" revision="am335x-v2013.01.02-bbb-fb" />
 
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -58,8 +58,6 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
-  <project path="device/google/dragon" name="device/google/dragon" groups="device,dragon" />
-  <project path="device/google/dragon-kernel" name="device/google/dragon-kernel" groups="device,dragon" clone-depth="1" />
   <project path="device/htc/flounder" name="device/htc/flounder" groups="device,flounder,broadcom_pdk" />
   <project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="device,flounder,broadcom_pdk" clone-depth="1" />
   <project path="device/huawei/angler" name="device/huawei/angler" groups="device,angler,broadcom_pdk" />
@@ -377,7 +375,6 @@
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" groups="pdk-fs" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
