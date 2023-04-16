@@ -16,7 +16,7 @@
      <copyfile src="build-beagleboneblack.sh" dest="build-beagleboneblack.sh" />
   </project>
   <project path="device/beagleboard/beagleboneblack" name="a4b-beagleboneblack" remote="a4b" revision="m6.0" />
-  <project path="ti-kernel" name="ti-linux-kernel-dev" remote="rcn" revision="4.1.30-ti-r70" />
+  <project path="ti-kernel" name="ti-linux-kernel-dev" remote="rcn" revision="refs/tags/4.1.30-ti-r70" />
   <project path="bb.org-overlays" name="bb.org-overlays" remote="beagleboard" revision="master" />
   <project path="u-boot" name="u-boot" remote="a4b" revision="am335x-v2013.01.02-bbb-fb" />
 
