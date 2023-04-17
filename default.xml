@@ -6,9 +6,9 @@
            remote="aosp"
            sync-j="4" />
   <remote  name="a4b"
-           fetch="git://github.com/csimmonds" />
+           fetch="https://github.com/csimmonds" />
   <remote  name="rcn"
-           fetch="git://github.com/RobertCNelson" />
+           fetch="https://github.com/RobertCNelson" />
   <remote  name="beagleboard"
            fetch="https://github.com/beagleboard" />
 
