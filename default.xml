@@ -5,10 +5,10 @@
            fetch="https://android.googlesource.com" />
 
   <remote  name="a4b"
-           fetch="git://github.com/csimmonds" />
+           fetch="https://github.com/csimmonds" />
 
   <remote  name="rcn"
-           fetch="git://github.com/RobertCNelson" />
+           fetch="https://github.com/RobertCNelson" />
 
   <default revision="refs/tags/android-5.1.1_r38"
            remote="aosp"
