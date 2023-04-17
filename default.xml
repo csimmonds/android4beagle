@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com" />
 
   <remote  name="a4b"
-           fetch="git://github.com/csimmonds" />
+           fetch="https://github.com/csimmonds" />
 
   <default revision="refs/tags/android-4.4.4_r2"
            remote="aosp"
